@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>depression</title>
+  <meta name="title" content="Understanding depression">
+  <meta name="description"
+    content="understanding depression">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/cssforblog.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload image
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+      <div class="header-content">
+        <div class="nav-container">
+          <!-- Navigation bar for going back to home -->
+          <nav class="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html">Back to Home</a></li>
+            </ul>
+          </nav>
+        </div>
+
+      <a href="#" class="logo">Understanding PTSD</a>
+
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <p class="section-text"><p>Post-traumatic stress disorder (PTSD) is a mental health condition that's triggered by a terrifying event — either experiencing it or witnessing it. Symptoms may include flashbacks, nightmares and severe anxiety, as well as uncontrollable thoughts about the event.
+
+                Most people who go through traumatic events may have temporary difficulty adjusting and coping, but with time and good self-care, they usually get better. If the symptoms get worse, last for months or even years, and interfere with your day-to-day functioning, you may have PTSD.
+                
+                Getting effective treatment after PTSD symptoms develop can be critical to reduce symptoms and improve function.</p>
+
+          </div>
+
+          <div class="hero-banner has-before">
+            <img src="data:image/jpeg;base64,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" width="431" height="596"
+              >
+
+          
+          </div>
+
+        </div>
+      </section>
+
+
+    <!-- #SYMPTOMS -->
+    <section class="section symptoms" id="symptoms" aria-label="symptoms">
+        <div class="container">
+
+            <h2 class="h2 section-title">Symptoms</h2>
+
+            <ul>
+                <li>
+                    <p>Post-traumatic stress disorder symptoms may start within one month of a traumatic event, but sometimes symptoms may not appear until years after the event. These symptoms cause significant problems in social or work situations and in relationships. They can also interfere with your ability to go about your normal daily tasks.</p>
+
+                    <p>PTSD symptoms are generally grouped into four types: intrusive memories, avoidance, negative changes in thinking and mood, and changes in physical and emotional reactions. Symptoms can vary over time or vary from person to person.</p>
+
+                    <h3>Intrusive memories</h3>
+                    <p>Symptoms of intrusive memories may include:</p>
+                    <ul>
+                        <li>Recurrent, unwanted distressing memories of the traumatic event</li>
+                        <li>Reliving the traumatic event as if it were happening again (flashbacks)</li>
+                        <li>Upsetting dreams or nightmares about the traumatic event</li>
+                        <li>Severe emotional distress or physical reactions to something that reminds you of the traumatic event</li>
+                    </ul>
+
+                    <h3>Avoidance</h3>
+                    <p>Symptoms of avoidance may include:</p>
+                    <ul>
+                        <li>Trying to avoid thinking or talking about the traumatic event</li>
+                        <li>Avoiding places, activities, or people that remind you of the traumatic event</li>
+                    </ul>
+
+                    <h3>Negative changes in thinking and mood</h3>
+                    <p>Symptoms of negative changes in thinking and mood may include:</p>
+                    <ul>
+                        <li>Negative thoughts about yourself, other people, or the world</li>
+                        <li>Hopelessness about the future</li>
+                        <!-- Add more symptoms as needed -->
+                    </ul>
+
+                    <h3>Changes in physical and emotional reactions</h3>
+                    <p>Symptoms of changes in physical and emotional reactions (also called arousal symptoms) may include:</p>
+                    <ul>
+                        <li>Being easily startled or frightened</li>
+                        <li>Always being on guard for danger</li>
+                        <li>Self-destructive behavior, such as drinking too much or driving too fast</li>
+                        <!-- Add more symptoms as needed -->
+                    </ul>
+
+                    <p>For children 6 years old and younger, signs and symptoms may also include:</p>
+                    <ul>
+                        <li>Re-enacting the traumatic event or aspects of the traumatic event through play</li>
+                        <li>Frightening dreams that may or may not include aspects of the traumatic event</li>
+                        <!-- Add more symptoms as needed -->
+                    </ul>
+
+                    <h3>Intensity of symptoms</h3>
+                    <p>PTSD symptoms can vary in intensity over time. You may have more PTSD symptoms when you're stressed in general, or when you come across reminders of what you went through. For example, you may hear a car backfire and relive combat experiences. Or you may see a report on the news about a sexual assault and feel overcome by memories of your own assault.</p>
+                </li>
+            </ul>
+
+            <p>For many people with depression, symptoms usually are severe enough to cause noticeable problems in day-to-day activities, such as work, school, social activities, or relationships with others. Some people may feel generally miserable or unhappy without really knowing why.</p>
+
+            <h3>Depression symptoms in children and teens</h3>
+            <p>Common signs and symptoms of depression in children and teenagers are similar to those of adults, but there can be some differences.</p>
+
+            <ul>
+                <li>In younger children, symptoms of depression may include sadness, irritability, clinginess, worry, aches and pains, refusing to go to school, or being underweight.</li>
+                <li>In teens, symptoms may include sadness, irritability, feeling negative and worthless, anger, poor performance or poor attendance at school, feeling misunderstood and extremely sensitive, using recreational drugs or alcohol, eating or sleeping too much, self-harm, loss of interest in normal activities, and avoidance of social interaction.</li>
+            </ul>
+
+            <h3>Depression symptoms in older adults</h3>
+            <p>Depression is not a normal part of growing older, and it should never be taken lightly. Unfortunately, depression often goes undiagnosed and untreated in older adults, and they may feel reluctant to seek help. Symptoms of depression may be different or less obvious in older adults, such as:</p>
+
+            <ul>
+                <li>Memory difficulties or personality changes</li>
+                <li>Physical aches or pain</li>
+                <li>Fatigue, loss of appetite, sleep problems, or loss of interest in sex — not caused by a medical condition or medication</li>
+                <li>Often wanting to stay at home, rather than going out to socialize or doing new things</li>
+                <li>Suicidal thinking or feelings, especially in older men</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- #INFORMATION -->
+    <section class="section information" id="information" aria-label="information">
+        <div class="container">
+
+            <h2>When to see a doctor</h2>
+            <p>If you have disturbing thoughts and feelings about a traumatic event for more than a month, if they're severe, or if you feel you're having trouble getting your life back under control, talk to your doctor or a mental health professional. Getting treatment as soon as possible can help prevent PTSD symptoms from getting worse.</p>
+
+            <h2>Causes</h2>
+            <p>You can develop post-traumatic stress disorder when you go through, see or learn about an event involving actual or threatened death, serious injury, or sexual violation.</p>
+
+            <p>Doctors aren't sure why some people get PTSD. As with most mental health problems, PTSD is probably caused by a complex mix of:</p>
+
+            <ul>
+                <li>Stressful experiences, including the amount and severity of trauma you've gone through in your life</li>
+                <li>Inherited mental health risks, such as a family history of anxiety and depression</li>
+                <li>Inherited features of your personality — often called your temperament</li>
+                <li>The way your brain regulates the chemicals and hormones your body releases in response to stress</li>
+            </ul>
+
+            <h3>Risk factors</h3>
+            <p>People of all ages can have post-traumatic stress disorder. However, some factors may make you more likely to develop PTSD after a traumatic event, such as:</p>
+
+            <ul>
+                <li>Experiencing intense or long-lasting trauma</li>
+                <li>Having experienced other trauma earlier in life, such as childhood abuse</li>
+                <li>Having a job that increases your risk of being exposed to traumatic events, such as military personnel and first responders</li>
+                <li>Having other mental health problems, such as anxiety or depression</li>
+                <li>Having problems with substance misuse, such as excess drinking or drug use</li>
+                <li>Lacking a good support system of family and friends</li>
+                <li>Having blood relatives with mental health problems, including anxiety or depression</li>
+            </ul>
+
+            <h2>Kinds of traumatic events</h2>
+            <p>The most common events leading to the development of PTSD include:</p>
+
+            <ul>
+                <li>Combat exposure</li>
+                <li>Childhood physical abuse</li>
+                <li>Sexual violence</li>
+                <li>Physical assault</li>
+                <li>Being threatened with a weapon</li>
+                <li>An accident</li>
+                <li>Many other traumatic events also can lead to PTSD, such as fire, natural disaster, mugging, robbery, plane crash, torture, kidnapping, life-threatening medical diagnosis, terrorist attack, and other extreme or life-threatening events.</li>
+            </ul>
+
+            <h2>Complications</h2>
+            <p>Post-traumatic stress disorder can disrupt your whole life — your job, your relationships, your health, and your enjoyment of everyday activities.</p>
+
+            <p>Having PTSD may also increase your risk of other mental health problems, such as:</p>
+
+            <ul>
+                <li>Depression and anxiety</li>
+                <li>Issues with drugs or alcohol use</li>
+                <li>Eating disorders</li>
+                <li>Suicidal thoughts and actions</li>
+            </ul>
+
+            <h2>Prevention</h2>
+            <p>After surviving a traumatic event, many people have PTSD-like symptoms at first, such as being unable to stop thinking about what's happened. Fear, anxiety, anger, depression, guilt — all are common reactions to trauma. However, the majority of people exposed to trauma do not develop long-term post-traumatic stress disorder.</p>
+
+            <p>Getting timely help and support may prevent normal stress reactions from getting worse and developing into PTSD. This may mean turning to family and friends who will listen and offer comfort. It may mean seeking out a mental health professional for a brief course of therapy. Some people may also find it helpful to turn to their faith community.</p>
+
+            <p>Support from others also may help prevent you from turning to unhealthy coping methods, such as misuse of alcohol or drugs.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <section class="section tedtalks" id="tedtalks" aria-label="tedtalks">
+        <div class="container">
+    
+            <p class="section-subtitle">TED Talks</p>
+    
+            <ul>
+                <!-- TED Talk: Understanding PTSD's Effects on Brain, Body, and Emotions | Janet Seahorn -->
+                <li>
+                    <div class="tedtalk-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BEHDQeIRTgs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">Understanding PTSD's Effects on Brain, Body, and Emotions | Janet Seahorn</h3>
+                            <p class="card-text">
+                                Janet Seahorn, Ph.D has been a teacher, administrator, and consultant for over thirty years. She currently teaches a variety of classes on neuroscience and literacy as an adjunct professor for Colorado State University in Fort Collins, CO. Jan has a Ph.D in Human Development and Organizational Systems...
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- TED Talk: PTSD: We are NOT Broken | San Pao -->
+                <li>
+                    <div class="tedtalk-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dBs48AmAxs0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">PTSD: We are NOT Broken | San Pao</h3>
+                            <p class="card-text">
+                                In this riveting and personal talk, San Pao walks us through memories of a life lived with PTSD, exploring the many ways trauma and its consequences can manifest and shape a person’s path over time...
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <!-- TED Talk: How art and music helped me overcome my Complex PTSD | Deena Lynch -->
+                <li>
+                    <div class="tedtalk-card">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gEFO_8517-g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="h3 card-title">How art and music helped me overcome my Complex PTSD | Deena Lynch</h3>
+                            <p class="card-text">
+                                Sharing her personal story of overcoming complex PTSD, Deena Lynch introduces us to unexpected, creative tools to support our own mental health...
+                            </p>
+                        </div>
+                    </div>
+                </li> 
+            </ul>
+    
+        </div>
+    </section>
+
+ 
+    </article>
+  </main>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
